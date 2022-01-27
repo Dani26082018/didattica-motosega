@@ -1,0 +1,17 @@
+.container{
+   padding-top: 50px;
+   padding-bottom: 30px;
+   margin-left:20px;
+   margin-right: 0px;
+}
+.container1{
+    margin-left: 110px;
+    max-width: 720px;
+}
+.btn-primary{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,168 @@
+<html lang="it">
+    <head>
+        <title>Calcolatrice</title>
+    </head>
+    <body>
+        <h1>Il mio Calcolatore</h1>
+
+
+        <div class="container">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <h2>Carrello1</h2>
+              <h2>Prezzo</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              2 book
+              <span class="badge bg-primary rounded-pill">{{num1}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 music CD
+              <span class="badge bg-primary rounded-pill">{{num2}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 chocolate bar
+              <span class="badge bg-primary rounded-pill">{{num3}}</span>
+            </li>
+            <button class="btn btn-primary" type="submit" (click)="stampa1()">Stampa scontrino</button>
+          </ul>
+        </div>
+
+        <div  *ngIf="show" class="container1">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <h2>Scontrino 1</h2>
+              <h2>Prezzo</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              2 book
+              <span class="badge bg-primary rounded-pill">{{num1x2}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 music CD
+              <span class="badge bg-primary rounded-pill">{{num2i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 chocolate bar
+              <span class="badge bg-primary rounded-pill">{{num3}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              totale iva
+              <span class="badge bg-primary rounded-pill">{{iva}}</span>
+            </li>
+            <button class="btn btn-primary" type="submit" (click)="somma()">Somma</button>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              prezzo totale
+              <span class="badge bg-primary rounded-pill">{{total}}</span>
+            </li>
+          </ul>
+          </div>
+
+          <div class="container">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <h2>Carrello2</h2>
+                <h2>Prezzo</h2>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                1 imported box of chocolates
+                <span class="badge bg-primary rounded-pill">{{num4}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                1 imported bottle of perfume
+                <span class="badge bg-primary rounded-pill">{{num5}}</span>
+              </li>
+              <button class="btn btn-primary" type="submit" (click)="stampa2()">Stampa scontrino</button>
+            </ul>
+          </div>
+
+        <div  *ngIf="show2" class="container1">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <h2>Scontrino 2</h2>
+              <h2>Prezzo</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 imported box of chocolates
+              <span class="badge bg-primary rounded-pill">{{num4i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 imported bottle of perfume
+              <span class="badge bg-primary rounded-pill">{{num5i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              totale iva
+              <span class="badge bg-primary rounded-pill">{{iva2tot}}</span>
+            </li>
+            <button class="btn btn-primary" type="submit" (click)="somma1()">Somma</button>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              prezzo totale
+              <span class="badge bg-primary rounded-pill">{{total1}}</span>
+            </li>
+          </ul>
+        </div>
+ 
+          <div class="container">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <h2>Carrello3</h2>
+              <h2>Prezzo</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 imported bottle of perfume
+              <span class="badge bg-primary rounded-pill">{{num6}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 bottle of perfume at
+              <span class="badge bg-primary rounded-pill">{{num7}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 packet of headache pills at
+              <span class="badge bg-primary rounded-pill">{{num8}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              3 box of imported chocolates at
+              <span class="badge bg-primary rounded-pill">{{num9}}</span>
+            </li>
+            <button class="btn btn-primary" type="submit" (click)="stampa3()">Stampa scontrino</button>
+          </ul>
+          </div>
+
+        <div  *ngIf="show3" class="container1">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <h2>Scontrino 3</h2>
+              <h2>Prezzo</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 imported bottle of perfume
+              <span class="badge bg-primary rounded-pill">{{num6i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 bottle of perfume at
+              <span class="badge bg-primary rounded-pill">{{num7i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              1 packet of headache pills at
+              <span class="badge bg-primary rounded-pill">{{num8}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              3 box of imported chocolates at
+              <span class="badge bg-primary rounded-pill">{{num9i}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              totale iva
+              <span class="badge bg-primary rounded-pill">{{iva3tot}}</span>
+            </li>
+            <button class="btn btn-primary" type="submit" (click)="somma2()">Somma</button>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              prezzo totale
+              <span class="badge bg-primary rounded-pill">{{total2}}</span>
+            </li>
+          </ul>  
+          </div>
+    </body>
+</html>
+
+<router-outlet></router-outlet>
+
