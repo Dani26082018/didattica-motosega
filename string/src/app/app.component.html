@@ -1,0 +1,18 @@
+<html lang="it">
+    <head>
+        <title>Calcolatrice</title>
+    </head>
+    <body>
+        <h1>Il mio Calcolatore</h1>
+        <form>
+            <input  type="number" name="num1" [(ngModel)]="num1"><br><br>
+             <input type="number" name="num2" [(ngModel)]="num2">
+            <button (click)= "somma()">addizione</button>
+            <p>Risultato:{{num3}} </p>
+        </form>
+        
+    </body>
+</html>
+
+
+<router-outlet></router-outlet>
